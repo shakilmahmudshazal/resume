@@ -1,0 +1,54 @@
+[debug] [2024-05-05T18:10:41.063Z] ----------------------------------------------------------------------
+[debug] [2024-05-05T18:10:41.064Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-05T18:10:41.065Z] CLI Version:   13.8.0
+[debug] [2024-05-05T18:10:41.065Z] Platform:      win32
+[debug] [2024-05-05T18:10:41.065Z] Node Version:  v18.17.1
+[debug] [2024-05-05T18:10:41.066Z] Time:          Mon May 06 2024 00:10:41 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-05-05T18:10:41.066Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-05T18:10:41.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-05T18:10:41.122Z] > authorizing via signed-in user (shakilssac@gmail.com)
+[debug] [2024-05-05T18:10:41.122Z] [iam] checking project shakil-mahmud-cv for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-05T18:10:41.123Z] > refreshing access token with scopes: []
+[debug] [2024-05-05T18:10:41.125Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-05T18:10:41.125Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-05T18:10:41.463Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-05T18:10:41.463Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-05T18:10:41.469Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/shakil-mahmud-cv:testIamPermissions [none]
+[debug] [2024-05-05T18:10:41.469Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/shakil-mahmud-cv:testIamPermissions x-goog-quota-user=projects/shakil-mahmud-cv
+[debug] [2024-05-05T18:10:41.469Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shakil-mahmud-cv:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-05T18:10:43.152Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/shakil-mahmud-cv:testIamPermissions 200
+[debug] [2024-05-05T18:10:43.152Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shakil-mahmud-cv:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-05T18:10:43.153Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shakil-mahmud-cv [none]
+[debug] [2024-05-05T18:10:43.870Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shakil-mahmud-cv 200
+[debug] [2024-05-05T18:10:43.870Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shakil-mahmud-cv {"projectId":"shakil-mahmud-cv","projectNumber":"406616906736","displayName":"shakil-mahmud","name":"projects/shakil-mahmud-cv","resources":{"hostingSite":"shakil-mahmud-cv"},"state":"ACTIVE","etag":"1_0fec592f-2cf4-47fd-aabf-3700654b0b87"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-05T18:10:51.204Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/shakil-mahmud-cv/sites/shakil-mahmud-cv [none]
+[debug] [2024-05-05T18:10:52.395Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/shakil-mahmud-cv/sites/shakil-mahmud-cv 200
+[debug] [2024-05-05T18:10:52.396Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/shakil-mahmud-cv/sites/shakil-mahmud-cv {"name":"projects/shakil-mahmud-cv/sites/shakil-mahmud-cv","defaultUrl":"https://shakil-mahmud-cv.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'D:\work\projects\react\portfolio\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\work\\projects\\react\\portfolio\\.next\\trace'
+}
+
+[debug] [2024-05-05T18:10:56.828Z] Error: ENOENT: no such file or directory, open 'D:\work\projects\react\portfolio\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
