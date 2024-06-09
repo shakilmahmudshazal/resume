@@ -228,3 +228,43 @@
       width: 30%;
       margin-left: 30px;
   }
+
+  .sub-section-title {
+    font-size: 32px;
+    margin: 25px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  .card-title-icon-div {
+    display: flex;
+    align-items: center;
+}
+
+.card-icon-div {
+    margin-right: 10px;
+}
+
+.card-title-div {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-div {
+    background: #F2F7FC;
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-div:nth-child(1), .card-div:nth-child(4) {
+    background: #FFEBD1;
+}

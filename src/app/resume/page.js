@@ -1,8 +1,9 @@
+import TitleBar from "@/components/title";
 
 export default function Resume() {
     return (
       <section className="details">
-          Here is the resume
+            <TitleBar title="Resume"/>
       </section>
     );
   }
