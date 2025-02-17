@@ -6,7 +6,6 @@ import { usePathname  } from 'next/navigation';
 export default function BasicInfo() {
   const pathName = usePathname(); 
   console.log('Current Pathname:', pathName);
-  debugger
   return (
     <section className="navigation-section">
         <div className="navigation-container">

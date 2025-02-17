@@ -268,3 +268,50 @@
 .card-div:nth-child(1), .card-div:nth-child(4) {
     background: #FFEBD1;
 }
+
+/* resume css */
+
+.card-dates {
+    color: #1A1003;
+}
+
+.card-degree {
+    font-weight: 600;
+}
+
+.card-item {
+    background: #FFE3BF;
+    border-radius: 10px;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+}
+
+
+.card-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.title.sub-section-title img {
+    margin-right: 10px;
+}
+
+.tag-card-title {
+    background: #E1E8EF;
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tag-card-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education-experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
