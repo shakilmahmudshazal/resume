@@ -4,7 +4,7 @@ export default function BasicInfo() {
     <section className='basic-info-section'>
       <div className="basic-info">
         <div className='profile-picture-container'>
-          <img src='assets/profile.jpg' className='prfile-picture' />
+          <img src='assets/pp.png' className='prfile-picture' />
         </div>
         <div className='profile-name'>Shakil Mahmud</div>
         <div className='profile-title'>FullStack Developer</div>
