@@ -18,3 +18,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SHAKIL_MAHMUD_CV }}
           channelId: live
           projectId: shakil-mahmud-cv
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks  
