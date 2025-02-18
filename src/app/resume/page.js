@@ -1,6 +1,53 @@
+import ResumeCard from "@/components/resume-card";
 import TitleBar from "@/components/title";
+import TagCard from "@/components/tagcard";
 
 export default function Resume() {
+  let educationData =[
+    {
+      year: "2015 - 2019",
+      subject: "Bachelor of Science in CSE",
+      institution: "Daffodil Internationnal University, Dhaka"
+    },
+    {
+      year: "2012 - 2014",
+      subject: "HSC (Science)",
+      institution: "Safiuddin Sarker Academy & College, Gazipur"
+    },
+    {
+      year: "2010 - 2012",
+      subject: "SSC (Science)",
+      institution: "Safiuddin Sarker Academy & College, Gazipur"
+    }
+  ];
+
+  let experienceData =[
+    {
+      year: "2020 - Current",
+      position: "Senior Software Engineer",
+      company: "Echologyx Ltd"
+    },
+    {
+      year: "2019 - 2020",
+      position: "Junior Software Engineer",
+      company: "Bluetech Solutions Ltd"
+    }
+  ];
+  let workSkills = [
+    "Magento",
+    "React",
+    "Next",
+    "Laravel"
+  ];
+
+  let softSkills = [
+    "Team Work",
+    "Problem Solving",
+    "Communication",
+    "Time Management",
+    "Adapt",
+    "Leadership"
+  ];
   return (
     <section className="details">
       <TitleBar title="Resume" />
@@ -12,23 +59,9 @@ export default function Resume() {
             <span>Education</span>
           </div>
           <div className="card-items">
-            <div className="card-item">
-              <div className="card-dates">2015 - 2019</div>
-              <div className="card-degree">Bachelor of Science in CSE</div>
-              <div className="card-title">Daffodil Internationnal University, Dhaka</div>
-            </div>
-            <div className="card-item">
-              <div className="card-dates">2012 - 2014</div>
-              <div className="card-degree">HSC (Science)</div>
-              <div className="card-title">Safiuddin Sarker Academy & College, Gazipur</div>
-            </div>
-
-            <div className="card-item">
-              <div className="card-dates"> 2010 - 2012</div>
-              <div className="card-degree">SSC (Science)</div>
-              <div className="card-title">Safiuddin Sarker Academy & College, Gazipur</div>
-            </div>
-
+            {
+              educationData.map((item)=><ResumeCard year={item.year} subject={item.subject} institution={item.institution}/>)
+            }
           </div>
         </div>
         <div className="Experience">
@@ -37,16 +70,9 @@ export default function Resume() {
             <span> Experience </span>
           </div>
           <div className="card-items">
-            <div className="card-item">
-              <div className="card-dates"> 2020 - Current</div>
-              <div className="card-degree">Senior Software Engineer</div>
-              <div className="card-title">Echologyx Ltd</div>
-            </div>
-            <div className="card-item">
-              <div className="card-dates">2019 - 2020</div>
-              <div className="card-degree">Junior Software Engineer</div>
-              <div className="card-title">Bluetech Solutions Ltd</div>
-            </div>
+          {
+            experienceData.map((item)=><ResumeCard year={item.year} subject={item.position} institution={item.company}/>)
+          }
           </div>
         </div>
         <div className="work-skills">
@@ -54,18 +80,9 @@ export default function Resume() {
             Work Skills
           </div>
           <div className="tag-card-items">
-            <div className="tag-card-item">
-              <div className="tag-card-title">Magento</div>
-            </div>
-            <div className="tag-card-item">
-              <div className="tag-card-title">React</div>
-            </div>
-            <div className="tag-card-item">
-              <div className="tag-card-title">Next</div>
-            </div>
-            <div className="tag-card-item">
-              <div className="tag-card-title">Laravel</div>
-            </div>
+           {
+            workSkills.map((item)=><TagCard tag={item}/>)
+           }
           </div>
         </div>
         <div className="soft-skills">
@@ -73,19 +90,9 @@ export default function Resume() {
             Soft Skills
           </div>
           <div className="tag-card-items">
-            <div className="tag-card-item">
-              <div className="tag-card-title">Team Work</div>
-            </div>
-            <div className="tag-card-item">
-              <div className="tag-card-title">Problem Solving</div>
-
-            </div>
-            <div className="tag-card-item">
-              <div className="tag-card-title">Communication</div>
-            </div>
-            <div className="tag-card-item">
-              <div className="tag-card-title">Time Management</div>
-            </div>
+            {
+              softSkills.map((item)=><TagCard tag={item}/>)
+            }
           </div>
         </div>
       </div>
