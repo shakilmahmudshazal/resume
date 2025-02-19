@@ -4,27 +4,27 @@ import WorkCard from "@/components/work-card";
 export default function Resume() {
   let workApplicationData = [
     {
-      image: "/assets/work-image/espares.png",
+      image: "/assets/work-image/espares-ss.png",
       type: "Web Application",
       title: "eSpares"
     },
     {
-      image: "/assets/work-image/bdtickets.png",
+      image: "/assets/work-image/bdtickets-ss.png",
       type: "Web Application",
       title: "BDTickets"
     },
     {
-      image: "/assets/work-image/gsf.svg",
+      image: "/assets/work-image/gsf-ss.png",
       type: "Web Application",
       title: "GSF Car Parts"
     },
     {
-      image: "/assets/work-image/hooknloop.png",
+      image: "/assets/work-image/hnl-ss.png",
       type: "Web Application",
       title: "Hook and Loop"
     },
     {
-      image: "/assets/work-image/barriersdirect.webp",
+      image: "/assets/work-image/bd-ss.png",
       type: "Web Application",
       title: "Barriers Direct"
     }
