@@ -418,3 +418,61 @@ section.main-body {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* contact form  */
+
+.contact-form-container {
+    background: #F8FBFB;
+    padding: 20px;
+}
+
+.contact-form-group label {
+    /* display: block; */
+}
+
+.contact-form-group {
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    flex-direction: column
+}
+
+.contact-form-group input {
+    height: 38px;
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    outline: none !important;
+}
+
+
+.contact-form-group + button {
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    border-radius: 12px;
+    padding: 10px;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, rgba(255, 156, 26, 1) 0%, rgba(236, 27, 9, 1) 100%) border-box;
+    border: 3px solid transparent;
+}
+
+.contact-form-group textarea#message {
+    width: 100%;
+    border: none;
+    background: transparent;
+    /* width: 100%; */
+    font-size: 16px;
+    outline: none !important;
+}
+
+.discussion {
+    margin-bottom: 20px;
+}
+
+span.bold {
+    font-weight: 600;
+}
