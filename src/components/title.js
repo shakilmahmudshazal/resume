@@ -1,14 +1,19 @@
 import React from 'react';
-import Link from 'next/link';
-export default function TitleBar({title}) {
+
+export default function TitleBar({ title, subtitle, icon }) {
   return (
-    <div className='title-div'>
-        <div className='title-page'>
-         {title}
+    <div className="section-header">
+      <div className="section-title-wrap">
+        {icon && (
+          <div className="section-icon-badge">
+            {icon}
+          </div>
+        )}
+        <div>
+          <h1 className="section-title">{title}</h1>
+          {subtitle && <p className="section-subtitle">{subtitle}</p>}
         </div>
-        <div className='title-bar'>
-          
-        </div>
+      </div>
     </div>
   );
 }

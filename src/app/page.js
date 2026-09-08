@@ -1,12 +1,39 @@
 import TitleBar from "@/components/title";
 import Objective from "@/components/objective";
-import WhatDoIDo from "@/components/whatDoIDo"; 
+import WhatDoIDo from "@/components/whatDoIDo";
+import BasicInfo from "@/components/basicInfo";
+
 export default function Home() {
+  const metrics = [
+    { number: "5+", label: "Years Engineering Experience" },
+    { number: "5+", label: "Enterprise E-Commerce Platforms" },
+    { number: "100k+", label: "Monthly Active Users Impacted" },
+    { number: "10+", label: "Engineers Mentored & Guided" },
+  ];
+
   return (
-    <section className="details">
-        <TitleBar title="ABOUT ME"/>
-        <Objective/>
-        <WhatDoIDo title ="What I do!"/>
-    </section>
+    <div className="hero-bento-grid">
+      {/* Left Bento Column: Profile Sidebar */}
+      <BasicInfo />
+
+      {/* Right Bento Column: Main Presentation */}
+      <div>
+        {/* Senior Engineering Metrics Grid */}
+        <div className="metrics-grid">
+          {metrics.map((m, idx) => (
+            <div key={idx} className="metric-card">
+              <div className="metric-number">{m.number}</div>
+              <div className="metric-label">{m.label}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Executive Summary Card */}
+        <Objective />
+
+        {/* Core Pillars Grid */}
+        <WhatDoIDo title="Engineering Pillars" />
+      </div>
+    </div>
   );
 }
