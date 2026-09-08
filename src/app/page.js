@@ -5,7 +5,7 @@ import BasicInfo from "@/components/basicInfo";
 
 export default function Home() {
   const metrics = [
-    { number: "5+", label: "Years Commercial Experience" },
+    { number: "7+", label: "Years Commercial Experience (Since 2019)" },
     { number: "400+", label: "Algorithmic Problems Solved" },
     { number: "6+", label: "Enterprise Platforms Delivered" },
     { number: "3.75", label: "B.Sc CSE Academic CGPA" },

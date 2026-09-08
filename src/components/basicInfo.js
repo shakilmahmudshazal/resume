@@ -31,7 +31,7 @@ export default function BasicInfo() {
         border: '1px solid var(--border-subtle)',
         marginBottom: '1.25rem'
       }}>
-        📍 Echologyx Limited &bull; 5+ Yrs Exp
+        📍 Echologyx Limited &bull; 7+ Yrs Exp (Since 2019)
       </div>
 
       {/* Contact Metadata List */}
