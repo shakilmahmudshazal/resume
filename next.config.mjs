@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    agentRules: false,
+    devIndicators: false,
 };
 
 export default nextConfig;
