@@ -60,7 +60,14 @@ export default function Resume() {
           </div>
           <div className="card-items">
             {
-              educationData.map((item)=><ResumeCard year={item.year} subject={item.subject} institution={item.institution}/>)
+              educationData.map((item, index) => (
+                <ResumeCard
+                  key={`edu-${index}-${item.institution}`}
+                  year={item.year}
+                  subject={item.subject}
+                  institution={item.institution}
+                />
+              ))
             }
           </div>
         </div>
@@ -71,7 +78,14 @@ export default function Resume() {
           </div>
           <div className="card-items">
           {
-            experienceData.map((item)=><ResumeCard year={item.year} subject={item.position} institution={item.company}/>)
+            experienceData.map((item, index) => (
+              <ResumeCard
+                key={`exp-${index}-${item.company}`}
+                year={item.year}
+                subject={item.position}
+                institution={item.company}
+              />
+            ))
           }
           </div>
         </div>
@@ -81,7 +95,9 @@ export default function Resume() {
           </div>
           <div className="tag-card-items">
            {
-            workSkills.map((item)=><TagCard tag={item}/>)
+            workSkills.map((item, index) => (
+              <TagCard key={`work-skill-${index}-${item}`} tag={item} />
+            ))
            }
           </div>
         </div>
@@ -91,7 +107,9 @@ export default function Resume() {
           </div>
           <div className="tag-card-items">
             {
-              softSkills.map((item)=><TagCard tag={item}/>)
+              softSkills.map((item, index) => (
+                <TagCard key={`soft-skill-${index}-${item}`} tag={item} />
+              ))
             }
           </div>
         </div>

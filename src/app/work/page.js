@@ -36,7 +36,14 @@ export default function Resume() {
 
       <div className="work-card-items">
         {
-          workApplicationData.map((item)=><WorkCard image={item.image} type={item.type} title={item.title}/>)
+          workApplicationData.map((item, index) => (
+            <WorkCard
+              key={`work-${index}-${item.title}`}
+              image={item.image}
+              type={item.type}
+              title={item.title}
+            />
+          ))
         }
       </div>
     </section>

@@ -4,7 +4,6 @@ import "./styleCustom.css";
 import TopBar from "@/components/topbar";
 import Navigation from "@/components/navigation"; 
 import BasicInfo from "@/components/basicInfo"; 
-import { NavigationProvider } from 'next/navigation';
 import './fonts.css';
 
 const inter = Inter({ subsets: ["latin"] });
