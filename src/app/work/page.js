@@ -48,6 +48,15 @@ export default function Work() {
       techStack: ["React", "Next.js", "PHP", "Magento 2"],
       link: "https://www.barriersdirect.co.uk",
     },
+    {
+      image: "/assets/work-image/napa-ss.png",
+      type: "Automotive Aftermarket Distribution",
+      title: "NAPA Auto Parts UK",
+      description:
+        "Premier UK automotive parts, workshop tools, and commercial vehicle equipment platform. Contributed to modern catalog browsing, digital product discovery, responsive UX, and distributor portal integrations.",
+      techStack: ["Next.js", "React", "Magento 2", "Tailwind CSS", "REST APIs"],
+      link: "https://www.napaautoparts.co.uk/",
+    },
   ];
 
   return (

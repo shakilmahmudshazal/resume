@@ -6,7 +6,7 @@ import BasicInfo from "@/components/basicInfo";
 export default function Home() {
   const metrics = [
     { number: "5+", label: "Years Engineering Experience" },
-    { number: "5+", label: "Enterprise E-Commerce Platforms" },
+    { number: "6+", label: "Enterprise E-Commerce Platforms" },
     { number: "100k+", label: "Monthly Active Users Impacted" },
     { number: "10+", label: "Engineers Mentored & Guided" },
   ];
