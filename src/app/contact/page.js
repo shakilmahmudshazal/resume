@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import TitleBar from '@/components/title';
 
 export default function Contact() {
-  const [copied, setCopied] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -12,12 +11,6 @@ export default function Contact() {
     subject: '',
     message: '',
   });
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText('mdshakilmahmud517@gmail.com');
-    setCopied(true);
-    setTimeout(() => setCopied(false), 3000);
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +35,7 @@ export default function Contact() {
       />
 
       <div className="contact-grid">
-        {/* Left Column: Direct Contact Info */}
+        {/* Left Column: Contact Channels & Location */}
         <div className="contact-info-panel">
           {/* Availability Status Card */}
           <div className="glass-card" style={{ padding: '1.5rem', marginBottom: '0.5rem' }}>
@@ -60,88 +53,8 @@ export default function Contact() {
               </span>
             </div>
             <p style={{ fontSize: '0.925rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              I am open to discussing senior software engineering opportunities, technical advisory, high-performance web applications, and developer mentorship.
+              I am actively open to discussing senior software engineering opportunities, technical advisory, high-performance web applications, and developer mentorship.
             </p>
-          </div>
-
-          {/* Email Channel */}
-          <div className="contact-channel-card">
-            <div className="contact-channel-left">
-              <div className="contact-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-              </div>
-              <div>
-                <div className="contact-channel-label">Primary Email</div>
-                <a href="mailto:mdshakilmahmud517@gmail.com" className="contact-channel-val">
-                  mdshakilmahmud517@gmail.com
-                </a>
-              </div>
-            </div>
-            <button
-              type="button"
-              onClick={handleCopyEmail}
-              className="copy-btn"
-              title="Copy Email to Clipboard"
-            >
-              {copied ? "Copied! ✓" : "Copy"}
-            </button>
-          </div>
-
-          {/* Secondary Email Channel */}
-          <div className="contact-channel-card">
-            <div className="contact-channel-left">
-              <div className="contact-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-              </div>
-              <div>
-                <div className="contact-channel-label">Secondary Email</div>
-                <a href="mailto:shakilcse2019@gmail.com" className="contact-channel-val">
-                  shakilcse2019@gmail.com
-                </a>
-              </div>
-            </div>
-            <button
-              type="button"
-              onClick={() => {
-                navigator.clipboard.writeText('shakilcse2019@gmail.com');
-                setCopied(true);
-                setTimeout(() => setCopied(false), 3000);
-              }}
-              className="copy-btn"
-              title="Copy Secondary Email"
-            >
-              Copy
-            </button>
-          </div>
-
-          {/* Phone Channel */}
-          <div className="contact-channel-card">
-            <div className="contact-channel-left">
-              <div className="contact-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
-              </div>
-              <div>
-                <div className="contact-channel-label">Phone / WhatsApp</div>
-                <a href="tel:+8801760396857" className="contact-channel-val">
-                  +880 1760 396 857
-                </a>
-              </div>
-            </div>
-            <a
-              href="tel:+8801760396857"
-              className="copy-btn"
-              style={{ textDecoration: 'none' }}
-            >
-              Call
-            </a>
           </div>
 
           {/* Location Channel */}
@@ -154,9 +67,27 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <div className="contact-channel-label">Location</div>
+                <div className="contact-channel-label">Location & Timezone</div>
                 <span className="contact-channel-val">
-                  Dhaka / Gazipur, Bangladesh (UTC+6)
+                  Dhaka, Bangladesh (UTC+6)
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Direct Communication Note */}
+          <div className="contact-channel-card">
+            <div className="contact-channel-left">
+              <div className="contact-icon-wrap" style={{ color: 'var(--accent-cyan)' }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div className="contact-channel-label">Response Time</div>
+                <span className="contact-channel-val" style={{ fontSize: '0.85rem' }}>
+                  Prompt response within 24 hours
                 </span>
               </div>
             </div>

@@ -86,10 +86,10 @@ export default function RootLayout({ children }) {
                   LinkedIn
                 </a>
                 <a
-                  href="mailto:mdshakilmahmud517@gmail.com"
+                  href="/contact"
                   className="footer-link"
                 >
-                  mdshakilmahmud517@gmail.com
+                  Contact Form &rarr;
                 </a>
               </div>
             </div>
