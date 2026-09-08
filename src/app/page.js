@@ -5,10 +5,10 @@ import BasicInfo from "@/components/basicInfo";
 
 export default function Home() {
   const metrics = [
-    { number: "5+", label: "Years Engineering Experience" },
-    { number: "6+", label: "Enterprise E-Commerce Platforms" },
-    { number: "100k+", label: "Monthly Active Users Impacted" },
-    { number: "10+", label: "Engineers Mentored & Guided" },
+    { number: "5+", label: "Years Commercial Experience" },
+    { number: "400+", label: "Algorithmic Problems Solved" },
+    { number: "6+", label: "Enterprise Platforms Delivered" },
+    { number: "3.75", label: "B.Sc CSE Academic CGPA" },
   ];
 
   return (

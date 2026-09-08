@@ -8,7 +8,7 @@ export default function BasicInfo() {
         <div className="profile-avatar-glow"></div>
         <img
           src="/assets/pp.png"
-          alt="Shakil Mahmud"
+          alt="Md. Shakil Mahmud"
           className="profile-avatar-img"
         />
       </div>
@@ -19,7 +19,7 @@ export default function BasicInfo() {
         <span>Available for Senior Roles</span>
       </div>
 
-      <h1 className="profile-name">Shakil Mahmud</h1>
+      <h1 className="profile-name">Md. Shakil Mahmud</h1>
       <div className="profile-role">Senior Software Engineer</div>
       
       <div style={{
@@ -31,7 +31,7 @@ export default function BasicInfo() {
         border: '1px solid var(--border-subtle)',
         marginBottom: '1.25rem'
       }}>
-        📍 Echologyx Ltd &bull; 5+ Yrs Exp
+        📍 Echologyx Limited &bull; 5+ Yrs Exp
       </div>
 
       {/* Contact Metadata List */}
@@ -44,8 +44,8 @@ export default function BasicInfo() {
           </div>
           <div className="profile-meta-content">
             <div className="profile-meta-label">Phone</div>
-            <a href="tel:+8801521213911" className="profile-meta-val">
-              +880 1521 213 911
+            <a href="tel:+8801760396857" className="profile-meta-val">
+              +880 1760 396 857
             </a>
           </div>
         </div>
@@ -59,8 +59,8 @@ export default function BasicInfo() {
           </div>
           <div className="profile-meta-content">
             <div className="profile-meta-label">Email</div>
-            <a href="mailto:shakilcse2019@gmail.com" className="profile-meta-val">
-              shakilcse2019@gmail.com
+            <a href="mailto:mdshakilmahmud517@gmail.com" className="profile-meta-val">
+              mdshakilmahmud517@gmail.com
             </a>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function BasicInfo() {
         </a>
 
         <a
-          href="https://linkedin.com/in/shakil-mahmud-shazal"
+          href="https://www.linkedin.com/in/md-shakil-37352918b/"
           target="_blank"
           rel="noopener noreferrer"
           className="profile-social-link"
@@ -136,8 +136,8 @@ export default function BasicInfo() {
 
       {/* Download Resume Button */}
       <a
-        href="/assets/profile.jpg"
-        download="Shakil_Mahmud_Resume.pdf"
+        href="/assets/Shakil_Mahmud_CV.docx"
+        download="Shakil_Mahmud_CV.docx"
         className="btn-primary"
         style={{ width: '100%', justifyContent: 'center' }}
       >
@@ -146,7 +146,7 @@ export default function BasicInfo() {
           <polyline points="7 10 12 15 17 10"></polyline>
           <line x1="12" y1="15" x2="12" y2="3"></line>
         </svg>
-        <span>Download Resume</span>
+        <span>Download Resume (CV)</span>
       </a>
     </aside>
   );

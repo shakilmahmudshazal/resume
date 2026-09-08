@@ -5,50 +5,79 @@ import TagCard from "@/components/tagcard";
 export default function Resume() {
   const experienceData = [
     {
-      year: "2020 — Present",
+      year: "Nov 2020 — Present",
       position: "Senior Software Engineer",
-      company: "Echologyx Ltd",
+      company: "Echologyx Limited, Uttara, Dhaka",
       badge: "Current Role",
       bullets: [
-        "Architecting and delivering high-performance, enterprise-scale e-commerce and web applications for global enterprise clients.",
-        "Spearheading frontend modernization using Next.js (App Router), React 19, and headless commerce architectures to maximize speed and SEO.",
-        "Achieving substantial improvements in Core Web Vitals (LCP, CLS, INP) across production stores serving thousands of daily shoppers.",
-        "Conducting rigorous code reviews, defining architectural standards, and mentoring mid-level and junior engineers.",
+        "Architecting and delivering enterprise-scale e-commerce web applications for international retail clients across the UK and Europe, including eSpares, GSF Car Parts, NAPA Auto Parts UK, Hook and Loop, and Barriers Direct.",
+        "Spearheading frontend modernization using Next.js (App Router), React 19, and headless commerce architectures, resulting in measurable improvements to Core Web Vitals (LCP, INP, CLS) and user conversions.",
+        "Engineering Conversion Rate Optimization (CRO) experiments and building automated end-to-end testing suites using WebDriverIO.",
+        "Leading technical design discussions, establishing code review guidelines, and mentoring mid-level and junior software engineers.",
       ],
-      techStack: ["Next.js", "React", "TypeScript", "Magento 2", "Tailwind CSS", "GraphQL", "REST APIs", "CI/CD"],
+      techStack: ["Next.js", "React", "TypeScript", "Magento 2", "PHP (OOP)", "Tailwind CSS", "WebDriverIO", "CRO Development", "GraphQL & REST APIs", "CI/CD"],
     },
     {
-      year: "2019 — 2020",
-      position: "Junior Software Engineer",
-      company: "Bluetech Solutions Ltd",
+      year: "Oct 2019 — Oct 2020",
+      position: "Software Engineer",
+      company: "Bluetech Solutions Bangladesh Limited, Gulshan, Dhaka",
       badge: "Full-Time",
       bullets: [
-        "Engineered full-stack features and bespoke business logic using PHP, Laravel, and relational databases (MySQL).",
-        "Integrated secure payment gateways, SMS verification services, and third-party vendor APIs.",
-        "Collaborated in Agile sprints with product designers and QA engineers to ensure flawless bi-weekly releases.",
+        "Core engineer for bdtickets.com, the country's flagship real-time transit reservation platform for bus, launch, and air travel, handling high-concurrency peak traffic.",
+        "Built administrative portals (admin.bdtickets.com and sradmin.bdtickets.com) using React.js, Next.js, JavaScript ES6, and Ant Design.",
+        "Developed travel agency inventory management systems (inventory.deshtravelsbd.com) and 401kdepot.com APIs utilizing Slim, Laravel, PHP, and MySQL.",
+        "Integrated dynamic seat-locking mechanisms, secure online payment gateways, and automated SMS verification services.",
       ],
-      techStack: ["Laravel", "PHP", "JavaScript", "MySQL", "Git", "REST APIs", "Bootstrap"],
+      techStack: ["React.js", "Next.js", "JavaScript (ES6+)", "Ant Design", "Laravel", "Slim", "PHP", "MySQL", "REST APIs", "Git"],
     },
+    {
+      year: "Aug 2019 — Oct 2019",
+      position: "Laravel API Developer",
+      company: "ARA Ads & Co. INC, Progati Sarani, Dhaka",
+      badge: "Full-Time",
+      bullets: [
+        "Engineered scalable RESTful API services and cost-management microservices utilizing PHP, Laravel, and MySQL.",
+        "Designed high-throughput relational database schemas and automated data processing endpoints for digital advertising operations.",
+      ],
+      techStack: ["PHP", "Laravel", "MySQL", "RESTful APIs", "Postman", "Git"],
+    },
+  ];
+
+  const competitiveProgramming = [
+    { platform: "UVA Online Judge", solved: "120+ Solved", icon: "⚡" },
+    { platform: "Beecrowd / URI", solved: "100+ Solved", icon: "🌐" },
+    { platform: "ACM-Hust", solved: "100+ Solved", icon: "🏆" },
+    { platform: "Codeforces", solved: "50+ Solved", icon: "⚔️" },
+    { platform: "LightOJ", solved: "30+ Solved", icon: "💡" },
+  ];
+
+  const honorsAwards = [
+    { title: "Individual Programming Contest Champion", org: "Daffodil International University (CSE Dept)", year: "2015" },
+    { title: "Top CGPA Achiever Award (CGPA 3.75)", org: "DIU 'We Shine Brighter' Honor", year: "2015" },
+    { title: "Second Runner-up, CSE Fest Programming Contest", org: "DIU Computer Programming Club (CPC)", year: "2016" },
+    { title: "National Runner-Up, iGenius Competition", org: "Grameenphone", year: "2014" },
+    { title: "Academic Excellence Reception", org: "Daily Prothom Alo", year: "2012" },
   ];
 
   const educationData = [
     {
       year: "2015 — 2019",
-      subject: "Bachelor of Science in Computer Science & Engineering (B.Sc CSE)",
-      institution: "Daffodil International University, Dhaka",
-      badge: "Graduated",
+      subject: "BSc in Computer Science & Engineering (B.Sc CSE)",
+      institution: "Daffodil International University, Dhaka, Bangladesh",
+      badge: "CGPA 3.75 / 4.00",
       bullets: [
-        "Core Focus: Software Engineering, Data Structures & Algorithms, Object-Oriented Design, Database Systems, Web Technologies.",
-        "Active participant in collegiate programming competitions and software development workshops.",
+        "Academic standing: Graduated with a high CGPA of 3.75 / 4.00; awarded the Top CGPA Achiever award in 2015.",
+        "Capstone / Final Year Project: 'Voice Recognition Robot via Android' utilizing Arduino, Java, and XML.",
+        "Core Coursework: Data Structures & Algorithms, Object-Oriented Programming (Java/C++), Database Management Systems (SQL), System Analysis & Design, Computer Architecture.",
       ],
-      techStack: ["Algorithms", "Software Architecture", "Database Systems", "C/C++", "Java", "Web Dev"],
+      techStack: ["Algorithms", "Data Structures", "System Design", "Java", "C/C++", "SQL", "Robotics/Arduino"],
     },
     {
       year: "2012 — 2014",
       subject: "Higher Secondary Certificate (HSC) — Science",
       institution: "Safiuddin Sarker Academy & College, Gazipur",
       badge: "Pre-University",
-      bullets: ["Rigorous foundation in Higher Mathematics, Physics, and Chemistry."],
+      bullets: ["Strong foundation in Higher Mathematics, Physics, and Chemistry."],
       techStack: [],
     },
     {
@@ -56,7 +85,7 @@ export default function Resume() {
       subject: "Secondary School Certificate (SSC) — Science",
       institution: "Safiuddin Sarker Academy & College, Gazipur",
       badge: "Secondary",
-      bullets: ["Excellence in Science and General Mathematics curriculum."],
+      bullets: ["Excellence in Science and General Mathematics; awarded formal reception by Daily Prothom Alo for outstanding academic achievement."],
       techStack: [],
     },
   ];
@@ -70,10 +99,10 @@ export default function Resume() {
           <polyline points="8 6 2 12 8 18"></polyline>
         </svg>
       ),
-      skills: ["Next.js (App Router)", "React 19", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS", "Modern CSS / PostCSS", "HTML5 & Semantic Web", "State Management (Redux/Zustand)"],
+      skills: ["Next.js 16 (App Router)", "React 19", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "Ant Design", "Modern CSS / PostCSS", "Sass / SCSS", "React-Native", "HTML5 & JSX"],
     },
     {
-      title: "Backend & System APIs",
+      title: "Backend & Systems",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
@@ -82,10 +111,10 @@ export default function Resume() {
           <line x1="6" y1="18" x2="6.01" y2="18"></line>
         </svg>
       ),
-      skills: ["PHP", "Laravel", "Node.js", "RESTful APIs", "GraphQL", "MySQL", "Database Indexing & Optimization"],
+      skills: ["PHP (OOP)", "Laravel", "Lumen", "Slim", "Node.js / Express", "ASP.NET / C#", "Java", "Python", "RESTful APIs", "GraphQL"],
     },
     {
-      title: "E-Commerce & Architecture",
+      title: "E-Commerce & QA Testing",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <circle cx="9" cy="21" r="1"></circle>
@@ -93,16 +122,16 @@ export default function Resume() {
           <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
         </svg>
       ),
-      skills: ["Magento 2", "Headless Commerce", "Payment Gateways", "High-Concurrency Checkout", "Multi-Warehouse Sync", "Catalog Architecture"],
+      skills: ["Magento 2", "Headless Commerce", "CRO Development", "WebDriverIO (E2E Testing)", "Payment Gateways", "High-Concurrency Checkout", "Multi-Warehouse Sync"],
     },
     {
-      title: "DevOps & Engineering Practices",
+      title: "Databases, DevOps & CS Fundamentals",
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path>
         </svg>
       ),
-      skills: ["Git & GitHub Actions", "CI/CD Pipelines", "Turbopack / Vite", "Code Reviews & Standards", "Agile & Scrum Delivery", "Technical Mentorship"],
+      skills: ["MySQL", "SQL Indexing & Optimization", "MongoDB", "Data Structures & Algorithms", "Git, GitHub & GitLab", "CI/CD Pipelines", "Linux Cloud Server", "Firebase", "cPanel"],
     },
   ];
 
@@ -110,7 +139,7 @@ export default function Resume() {
     <div>
       <TitleBar
         title="Resume & Credentials"
-        subtitle="A detailed track record of professional engineering experience, system architecture, and academic achievements."
+        subtitle="A detailed track record of professional engineering experience, system architecture, competitive programming, and academic credentials."
         icon={
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -122,7 +151,7 @@ export default function Resume() {
         }
       />
 
-      {/* Experience Section */}
+      {/* Professional Experience Section */}
       <section style={{ marginBottom: '3.5rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
           <div style={{
@@ -160,6 +189,73 @@ export default function Resume() {
         </div>
       </section>
 
+      {/* Competitive Programming & Algorithmic Problem Solving */}
+      <section style={{ marginBottom: '3.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          <div style={{
+            width: '2rem',
+            height: '2rem',
+            borderRadius: '0.5rem',
+            background: 'rgba(245, 158, 11, 0.1)',
+            color: 'var(--accent-amber)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+              Competitive Programming & Problem Solving
+            </h2>
+            <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
+              Over 400+ algorithmic problems solved across international competitive programming platforms
+            </p>
+          </div>
+        </div>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+          gap: '1rem',
+          marginBottom: '1.5rem',
+        }}>
+          {competitiveProgramming.map((cp, idx) => (
+            <div
+              key={idx}
+              className="glass-card"
+              style={{
+                padding: '1.25rem',
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: '0.35rem',
+              }}
+            >
+              <span style={{ fontSize: '1.5rem' }}>{cp.icon}</span>
+              <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '0.95rem' }}>
+                {cp.platform}
+              </div>
+              <span style={{
+                fontFamily: 'var(--font-mono)',
+                fontSize: '0.8rem',
+                color: 'var(--accent-cyan)',
+                fontWeight: 600,
+                background: 'rgba(6, 182, 212, 0.1)',
+                padding: '0.2rem 0.6rem',
+                borderRadius: '9999px',
+              }}>
+                {cp.solved}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Categorized Skills Matrix */}
       <section style={{ marginBottom: '3.5rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
@@ -193,6 +289,57 @@ export default function Resume() {
                 {category.skills.map((skill, sIdx) => (
                   <TagCard key={`skill-${idx}-${sIdx}`} tag={skill} />
                 ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Honors & Awards Section */}
+      <section style={{ marginBottom: '3.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
+          <div style={{
+            width: '2rem',
+            height: '2rem',
+            borderRadius: '0.5rem',
+            background: 'rgba(236, 72, 153, 0.1)',
+            color: '#ec4899',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+            Honors & Awards
+          </h2>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+          {honorsAwards.map((award, aIdx) => (
+            <div key={aIdx} className="glass-card" style={{ padding: '1.35rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                <span style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '0.75rem',
+                  color: 'var(--accent-cyan)',
+                  background: 'rgba(6, 182, 212, 0.1)',
+                  padding: '0.15rem 0.5rem',
+                  borderRadius: '9999px',
+                  fontWeight: 600,
+                }}>
+                  {award.year}
+                </span>
+                <span style={{ fontSize: '1.1rem' }}>🏅</span>
+              </div>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
+                {award.title}
+              </h3>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                {award.org}
               </div>
             </div>
           ))}

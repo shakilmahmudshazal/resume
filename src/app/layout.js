@@ -15,19 +15,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Shakil Mahmud | Senior Software Engineer",
+  title: "Md. Shakil Mahmud | Senior Software Engineer",
   description:
-    "Portfolio and Engineering Resume of Shakil Mahmud — Senior Software Engineer specializing in Next.js, React, and Enterprise E-Commerce platforms.",
+    "Portfolio and Engineering Resume of Md. Shakil Mahmud — Senior Software Engineer specializing in Next.js, React, and Enterprise E-Commerce platforms at Echologyx Limited.",
   keywords: [
+    "Md. Shakil Mahmud",
     "Shakil Mahmud",
     "Senior Software Engineer",
     "Next.js Developer",
     "React Developer",
     "Magento 2 Engineer",
     "Fullstack Engineer",
-    "Echologyx",
+    "Echologyx Limited",
+    "Competitive Programming",
   ],
-  authors: [{ name: "Shakil Mahmud" }],
+  authors: [{ name: "Md. Shakil Mahmud" }],
 };
 
 export default function RootLayout({ children }) {
@@ -56,10 +58,10 @@ export default function RootLayout({ children }) {
             <div className="footer-content">
               <div className="footer-brand">
                 <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '0.95rem' }}>
-                  Shakil Mahmud
+                  Md. Shakil Mahmud
                 </div>
                 <div className="footer-copyright">
-                  &copy; {new Date().getFullYear()} Shakil Mahmud. Crafted for high performance and engineering excellence.
+                  &copy; {new Date().getFullYear()} Md. Shakil Mahmud. Crafted for high performance and engineering excellence.
                 </div>
                 <div className="footer-stack">
                   Built with Next.js 16 (Turbopack) &bull; React 19 &bull; Tailwind CSS
@@ -76,7 +78,7 @@ export default function RootLayout({ children }) {
                   GitHub
                 </a>
                 <a
-                  href="https://linkedin.com/in/shakil-mahmud-shazal"
+                  href="https://www.linkedin.com/in/md-shakil-37352918b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer-link"
@@ -84,10 +86,10 @@ export default function RootLayout({ children }) {
                   LinkedIn
                 </a>
                 <a
-                  href="mailto:shakilcse2019@gmail.com"
+                  href="mailto:mdshakilmahmud517@gmail.com"
                   className="footer-link"
                 >
-                  shakilcse2019@gmail.com
+                  mdshakilmahmud517@gmail.com
                 </a>
               </div>
             </div>

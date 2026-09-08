@@ -6,11 +6,13 @@ export default function Objective() {
     'React 19',
     'TypeScript',
     'Magento 2',
-    'Laravel',
+    'PHP & Laravel',
     'Node.js',
+    'Algorithms & DS (400+ Solved)',
     'Tailwind CSS',
-    'REST & GraphQL',
-    'PostgreSQL / MySQL',
+    'CRO & WebDriverIO',
+    'REST & GraphQL APIs',
+    'MySQL & MongoDB',
     'Git & CI/CD',
   ];
 
@@ -32,7 +34,7 @@ export default function Objective() {
           color: 'var(--accent-cyan)',
           fontWeight: 600,
         }}>
-          Executive Summary
+          Executive Engineering Summary
         </span>
       </div>
 
@@ -42,13 +44,13 @@ export default function Objective() {
         lineHeight: 1.7,
         marginBottom: '1.25rem',
       }}>
-        Accomplished <strong style={{ color: '#fff' }}>Senior Software Engineer</strong> with over 5 years of hands-on experience architecting and delivering high-performance full-stack web applications and enterprise-grade e-commerce solutions. Proven expertise in modern React/Next.js ecosystems, Magento platforms, and scalable backend services. Known for driving engineering quality, mentoring cross-functional developer teams, and delivering seamless user experiences at scale.
+        Results-driven <strong style={{ color: '#fff' }}>Senior Software Engineer</strong> with over 5 years of commercial experience architecting enterprise-grade e-commerce platforms, mission-critical booking engines, and scalable web architectures. Combines rigorous computer science fundamentals—distinguished as an individual programming contest champion with <strong style={{ color: '#fff' }}>400+ algorithmic problems solved</strong> across UVA, Codeforces, and LightOJ—with deep production mastery of modern React/Next.js ecosystems, Magento 2, and Laravel microservices. Proven track record at <strong style={{ color: '#fff' }}>Echologyx Limited</strong> and <strong style={{ color: '#fff' }}>Bluetech Solutions</strong> leading cross-functional teams, optimizing Core Web Vitals, and shipping resilient software at international scale.
       </p>
 
       {/* Core Tech Stack Pills */}
       <div>
         <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-          Core Technical Toolkit
+          Core Technical Toolkit & Specializations
         </div>
         <div className="tech-tags-row">
           {coreTech.map((tech) => (

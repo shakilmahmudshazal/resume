@@ -24,7 +24,7 @@ export default function Navigation() {
             <span>&lt;/&gt;</span>
           </div>
           <div className="brand-text">
-            <span className="brand-name">Shakil Mahmud</span>
+            <span className="brand-name">Md. Shakil Mahmud</span>
             <span className="brand-title">Senior Software Engineer</span>
           </div>
         </Link>
@@ -60,7 +60,7 @@ export default function Navigation() {
           </a>
 
           <a
-            href="https://linkedin.com/in/shakil-mahmud-shazal"
+            href="https://www.linkedin.com/in/md-shakil-37352918b/"
             target="_blank"
             rel="noopener noreferrer"
             className="header-social"

@@ -14,7 +14,7 @@ export default function Contact() {
   });
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('shakilcse2019@gmail.com');
+    navigator.clipboard.writeText('mdshakilmahmud517@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 3000);
   };
@@ -56,11 +56,11 @@ export default function Contact() {
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em'
               }}>
-                Open for Collaboration
+                Open for Senior Opportunities
               </span>
             </div>
             <p style={{ fontSize: '0.925rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              I am open to discussing full-time senior engineering opportunities, technical advisory, high-performance web applications, and developer mentorship.
+              I am open to discussing senior software engineering opportunities, technical advisory, high-performance web applications, and developer mentorship.
             </p>
           </div>
 
@@ -74,9 +74,9 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <div className="contact-channel-label">Email</div>
-                <a href="mailto:shakilcse2019@gmail.com" className="contact-channel-val">
-                  shakilcse2019@gmail.com
+                <div className="contact-channel-label">Primary Email</div>
+                <a href="mailto:mdshakilmahmud517@gmail.com" className="contact-channel-val">
+                  mdshakilmahmud517@gmail.com
                 </a>
               </div>
             </div>
@@ -90,6 +90,36 @@ export default function Contact() {
             </button>
           </div>
 
+          {/* Secondary Email Channel */}
+          <div className="contact-channel-card">
+            <div className="contact-channel-left">
+              <div className="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div className="contact-channel-label">Secondary Email</div>
+                <a href="mailto:shakilcse2019@gmail.com" className="contact-channel-val">
+                  shakilcse2019@gmail.com
+                </a>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                navigator.clipboard.writeText('shakilcse2019@gmail.com');
+                setCopied(true);
+                setTimeout(() => setCopied(false), 3000);
+              }}
+              className="copy-btn"
+              title="Copy Secondary Email"
+            >
+              Copy
+            </button>
+          </div>
+
           {/* Phone Channel */}
           <div className="contact-channel-card">
             <div className="contact-channel-left">
@@ -100,13 +130,13 @@ export default function Contact() {
               </div>
               <div>
                 <div className="contact-channel-label">Phone / WhatsApp</div>
-                <a href="tel:+8801521213911" className="contact-channel-val">
-                  +880 1521 213 911
+                <a href="tel:+8801760396857" className="contact-channel-val">
+                  +880 1760 396 857
                 </a>
               </div>
             </div>
             <a
-              href="tel:+8801521213911"
+              href="tel:+8801760396857"
               className="copy-btn"
               style={{ textDecoration: 'none' }}
             >
@@ -126,7 +156,7 @@ export default function Contact() {
               <div>
                 <div className="contact-channel-label">Location</div>
                 <span className="contact-channel-val">
-                  Dhaka, Bangladesh (UTC+6)
+                  Dhaka / Gazipur, Bangladesh (UTC+6)
                 </span>
               </div>
             </div>
@@ -135,7 +165,7 @@ export default function Contact() {
           {/* Direct Social Links */}
           <div className="glass-card" style={{ padding: '1.25rem 1.5rem' }}>
             <div style={{ fontSize: '0.775rem', color: 'var(--text-dim)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-              Connect Across Platforms
+              Connect Across Professional Channels
             </div>
             <div style={{ display: 'flex', gap: '0.75rem' }}>
               <a
@@ -148,7 +178,7 @@ export default function Contact() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/shakil-mahmud-shazal"
+                href="https://www.linkedin.com/in/md-shakil-37352918b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"
@@ -226,7 +256,7 @@ export default function Contact() {
                 id="contact-message"
                 required
                 rows={5}
-                placeholder="Describe your project, team requirements, or collaboration idea..."
+                placeholder="Describe your team requirements, collaboration scope, or architectural challenge..."
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="form-textarea"
