@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bgGrad)" stroke="url(#brandGrad)" stroke-width="5"/>
+  <rect x="24" y="26" width="80" height="52" rx="7" fill="#0d1527" stroke="url(#brandGrad)" stroke-width="3.5"/>
+  <path d="M 46 44 L 38 52 L 46 60" fill="none" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 59 63 L 69 41" stroke="#818cf8" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M 82 44 L 90 52 L 82 60" fill="none" stroke="#c084fc" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 16 82 L 112 82 C 112 88 107 92 100 92 L 28 92 C 21 92 16 88 16 82 Z" fill="url(#brandGrad)"/>
+  <rect x="52" y="82" width="24" height="3" rx="1.5" fill="#0d1527"/>
+</svg>

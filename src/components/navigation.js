@@ -20,8 +20,12 @@ export default function Navigation() {
       <nav className="navbar">
         {/* Brand Logo */}
         <Link href="/" className="brand-link">
-          <div className="brand-badge">
-            <span>&lt;/&gt;</span>
+          <div className="brand-badge" style={{ padding: '0.2rem', overflow: 'hidden' }}>
+            <img
+              src="/assets/site_logo.svg"
+              alt="Md. Shakil Mahmud Logo"
+              style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '0.45rem' }}
+            />
           </div>
           <div className="brand-text">
             <span className="brand-name">Md. Shakil Mahmud</span>
