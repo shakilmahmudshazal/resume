@@ -1,7 +1,27 @@
+'use client';
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import TitleBar from "@/components/title";
 import WorkCard from "@/components/work-card";
 
 export default function Work() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/resume");
+  }, [router]);
+
+  return (
+    <div style={{ textAlign: "center", padding: "4rem 1rem", color: "var(--text-muted)" }}>
+      <meta httpEquiv="refresh" content="0; url=/resume" />
+      <p>Redirecting to Resume...</p>
+    </div>
+  );
+}
+
+// Temporarily hidden - restore export default function Work() here when ready
+function _OriginalWork() {
   const workApplicationData = [
     {
       image: "/assets/work-image/espares-ss.png",
