@@ -11,7 +11,7 @@ export default function Navigation() {
   const navItems = [
     { label: "About", href: "/" },
     { label: "Resume", href: "/resume" },
-    // { label: "Work", href: "/work" }, // Temporarily hidden
+    { label: "Work", href: "/work" },
     { label: "Essays & Blog ↗", href: "https://shakilmahmud.com", external: true },
     { label: "Contact", href: "/contact" },
   ];

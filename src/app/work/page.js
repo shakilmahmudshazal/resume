@@ -1,111 +1,93 @@
-'use client';
-
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 import TitleBar from "@/components/title";
 import WorkCard from "@/components/work-card";
 
+export const metadata = {
+  title: "Featured Work & Enterprise Architecture | Md. Shakil Mahmud",
+  description:
+    "Enterprise e-commerce architectures, high-concurrency booking engines, and mission-critical systems delivered by Senior Software Engineer Md. Shakil Mahmud.",
+};
+
 export default function Work() {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.replace("/resume");
-  }, [router]);
-
-  return (
-    <div style={{ textAlign: "center", padding: "4rem 1rem", color: "var(--text-muted)" }}>
-      <meta httpEquiv="refresh" content="0; url=/resume" />
-      <p>Redirecting to Resume...</p>
-    </div>
-  );
-}
-
-// Temporarily hidden - restore export default function Work() here when ready
-function _OriginalWork() {
   const workApplicationData = [
     {
-      image: "/assets/work-image/espares-ss.png",
       type: "Enterprise E-Commerce",
       title: "eSpares",
+      role: "Senior Software Engineer • Echologyx",
+      metrics: "1M+ Catalog SKUs • Core Web Vitals Optimization",
       description:
         "The UK's market-leading spare parts and appliance repair platform managing an expansive catalog of over 1M+ SKUs. Contributed to front-end performance tuning, responsive UI redesign, and frictionless checkout flows at Echologyx.",
-      techStack: ["Next.js", "React", "Magento 2", "Tailwind CSS", "REST APIs"],
-      link: "https://www.espares.co.uk",
+      techStack: ["Next.js", "React", "Magento 2", "Tailwind CSS", "REST APIs", "WebDriverIO"],
     },
     {
-      image: "/assets/work-image/bdtickets-ss.png",
       type: "High-Concurrency Booking Engine",
-      title: "BDTickets",
+      title: "BDTickets Platform",
+      role: "Core Software Engineer • Bluetech Solutions",
+      metrics: "Nationwide Transit Ticketing • Real-Time Concurrency",
       description:
-        "Engineered as a core software engineer at Bluetech Solutions across bdtickets.com, admin.bdtickets.com, and sradmin.bdtickets.com. Built real-time seat locks, multi-operator inventory sync, and redundant payment gateways to handle extreme holiday traffic.",
+        "Engineered as a core software engineer across the public passenger booking system, operator administration portal, and executive monitoring console. Architected real-time seat locks, multi-operator inventory synchronization, and redundant payment gateways to handle extreme holiday travel traffic.",
       techStack: ["React.js", "Next.js", "JavaScript (ES6+)", "Ant Design", "Laravel", "MySQL"],
-      link: "https://bdtickets.com",
     },
     {
-      image: "/assets/work-image/gsf-ss.png",
       type: "Automotive E-Commerce",
       title: "GSF Car Parts",
+      role: "Senior Software Engineer • Echologyx",
+      metrics: "Nationwide UK Distribution • Real-Time Branch Inventory",
       description:
-        "Major UK national automotive parts distributor with hundreds of branch locations. Features vehicle registration number (VRM) lookup, real-time localized warehouse stock, and click-and-collect reservation engineered at Echologyx.",
-      techStack: ["React", "Next.js", "Magento 2", "REST APIs", "Modern CSS"],
-      link: "https://www.gsfcarparts.com",
+        "Major UK national automotive parts distributor with hundreds of branch locations. Contributed to vehicle registration number (VRM) lookup integration, real-time localized warehouse stock validation, and click-and-collect reservation workflows engineered at Echologyx.",
+      techStack: ["React", "Next.js", "Magento 2", "REST APIs", "Modern CSS", "CRO"],
     },
     {
-      image: "/assets/work-image/napa-ss.png",
       type: "Automotive Aftermarket Distribution",
       title: "NAPA Auto Parts UK",
+      role: "Senior Software Engineer • Echologyx",
+      metrics: "Pan-European Catalog Architecture • Distributor UX",
       description:
-        "Premier UK automotive parts, workshop tools, and commercial vehicle equipment platform. Contributed to modern catalog browsing, digital product discovery, responsive UX, and distributor portal integrations at Echologyx.",
+        "Premier UK automotive parts, workshop tools, and commercial vehicle equipment platform. Contributed to modern catalog browsing, digital product discovery, responsive UX design, and distributor portal integrations at Echologyx.",
       techStack: ["Next.js", "React", "Magento 2", "Tailwind CSS", "REST APIs"],
-      link: "https://www.napaautoparts.co.uk/",
     },
     {
-      image: "/assets/work-image/hnl-ss.png",
       type: "Specialty Commerce & Configurator",
       title: "Hook and Loop",
+      role: "Senior Software Engineer • Echologyx",
+      metrics: "Dynamic Product Configurator • B2B Tiered Volume Pricing",
       description:
-        "Specialized industrial fastening and commercial fastener web store. Includes dynamic custom strap configurator tools, tiered quantity discounts for B2B accounts, and intuitive product discovery.",
-      techStack: ["Next.js", "React", "Tailwind CSS", "Magento 2"],
-      link: "https://hookandloop.com",
+        "Specialized industrial fastening and commercial fastener web store. Engineered dynamic custom strap configurator tools, tiered quantity discounts for B2B accounts, and intuitive product discovery architectures.",
+      techStack: ["Next.js", "React", "Tailwind CSS", "Magento 2", "TypeScript"],
     },
     {
-      image: "/assets/work-image/bd-ss.png",
       type: "B2B / B2C Infrastructure Commerce",
       title: "Barriers Direct",
+      role: "Senior Software Engineer • Echologyx",
+      metrics: "Bespoke Dimension Quoting Engine • Complex Trade Dispatch",
       description:
         "UK industry leader for commercial security barriers, bollards, and safety infrastructure. Engineered automated bespoke quoting engines, customized dimension calculations, and complex trade dispatch workflows.",
-      techStack: ["React", "Next.js", "PHP", "Magento 2"],
-      link: "https://www.barriersdirect.co.uk",
+      techStack: ["React", "Next.js", "PHP", "Magento 2", "Custom Modules"],
     },
   ];
 
   const additionalPlatforms = [
     {
-      title: "BDTickets Admin & SR Admin Portals",
-      url: "https://admin.bdtickets.com/",
-      role: "Core Frontend & Systems Engineer",
-      tech: ["React.js", "Next.js", "Ant Design", "REST APIs"],
-      desc: "Comprehensive operations console for transport operators and super administrators to manage routes, real-time bus seats, dynamic fares, passenger manifests, and financial reports.",
+      title: "Transit Operator Administration & SR Admin Portals",
+      role: "Core Frontend & Systems Engineer • Bluetech Solutions",
+      tech: ["React.js", "Next.js", "Ant Design", "REST APIs", "Secure RBAC"],
+      desc: "Comprehensive operations console for transport operators and super administrators to manage routes, real-time bus seats, dynamic fares, passenger manifests, and financial reconciliation reports.",
     },
     {
-      title: "Desh Travels Inventory Management",
-      url: "https://inventory.deshtravelsbd.com/",
-      role: "Backend & Systems Developer",
-      tech: ["Slim", "PHP", "MySQL", "jQuery"],
-      desc: "Centralized inventory reservation and fleet management system built for major inter-district transport operators with localized branch ticketing.",
+      title: "Inter-District Fleet Inventory & Ticket Dispatch",
+      role: "Backend & Systems Developer • Bluetech Solutions",
+      tech: ["Slim", "PHP", "MySQL", "jQuery", "APIs"],
+      desc: "Centralized inventory reservation and fleet management system built for major inter-district transport operators with localized branch ticketing and live route scheduling.",
     },
     {
-      title: "401kDepot Financial API",
-      url: "https://401kdepot.com/",
-      role: "API Developer",
-      tech: ["Laravel", "PHP", "SQL APIs"],
-      desc: "High-security financial API backend designed for managing investment portfolios, retirement contribution records, and transactional validation.",
+      title: "Retirement & Investment Portfolio Validation API",
+      role: "API Developer • ARA Ads / Bluetech",
+      tech: ["Laravel", "PHP", "MySQL", "Financial APIs"],
+      desc: "High-security financial API backend designed for managing investment portfolios, retirement contribution records, and automated transactional validation.",
     },
     {
-      title: "FoodCount PWA (Office Fast-Food Management)",
-      url: "https://foodcount-e830c.firebaseapp.com/",
+      title: "FoodCount PWA (Enterprise Meal Orchestration)",
       role: "Creator & Fullstack Developer",
-      tech: ["React", "Firebase API", "PWA", "Auth"],
+      tech: ["React", "Firebase API", "PWA", "Realtime Auth"],
       desc: "Progressive Web Application (PWA) engineered for real-time automated meal scheduling, office lunch orders, and group tallying.",
     },
   ];
@@ -123,26 +105,72 @@ function _OriginalWork() {
         }
       />
 
+      {/* Corporate Confidentiality / Company Policy Notice */}
+      <div
+        className="glass-card"
+        style={{
+          padding: "1.25rem 1.5rem",
+          marginBottom: "2.5rem",
+          borderLeft: "4px solid var(--accent-cyan)",
+          display: "flex",
+          alignItems: "flex-start",
+          gap: "1rem",
+        }}
+      >
+        <div
+          style={{
+            color: "var(--accent-cyan)",
+            paddingTop: "0.15rem",
+            flexShrink: 0,
+          }}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <div>
+          <div
+            style={{
+              fontSize: "0.85rem",
+              fontWeight: 700,
+              color: "var(--text-primary)",
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              fontFamily: "var(--font-mono)",
+              marginBottom: "0.25rem",
+            }}
+          >
+            Client Confidentiality & Company Policy Notice
+          </div>
+          <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+            In strict compliance with corporate client non-disclosure agreements (NDAs) and company confidentiality policies, live external URLs, operator console endpoints, and production UI screenshots are withheld. Technical architecture, systems design, and engineering methodologies are summarized below.
+          </p>
+        </div>
+      </div>
+
       {/* Main Flagship Enterprise Projects */}
-      <section style={{ marginBottom: '3.5rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-          <div style={{
-            width: '2rem',
-            height: '2rem',
-            borderRadius: '0.5rem',
-            background: 'rgba(6, 182, 212, 0.1)',
-            color: 'var(--accent-cyan)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
+      <section style={{ marginBottom: "3.5rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
+          <div
+            style={{
+              width: "2rem",
+              height: "2rem",
+              borderRadius: "0.5rem",
+              background: "rgba(6, 182, 212, 0.1)",
+              color: "var(--accent-cyan)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
               <polyline points="2 17 12 22 22 17"></polyline>
               <polyline points="2 12 12 17 22 12"></polyline>
             </svg>
           </div>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-primary)" }}>
             Enterprise Platforms & Flagship Systems
           </h2>
         </div>
@@ -151,12 +179,12 @@ function _OriginalWork() {
           {workApplicationData.map((item, index) => (
             <WorkCard
               key={`work-${index}-${item.title}`}
-              image={item.image}
               type={item.type}
               title={item.title}
+              role={item.role}
+              metrics={item.metrics}
               description={item.description}
               techStack={item.techStack}
-              link={item.link}
             />
           ))}
         </div>
@@ -164,17 +192,19 @@ function _OriginalWork() {
 
       {/* Additional Platforms, Admin Engines & Microservices */}
       <section>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
-          <div style={{
-            width: '2rem',
-            height: '2rem',
-            borderRadius: '0.5rem',
-            background: 'rgba(139, 92, 246, 0.1)',
-            color: 'var(--accent-violet)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.5rem" }}>
+          <div
+            style={{
+              width: "2rem",
+              height: "2rem",
+              borderRadius: "0.5rem",
+              background: "rgba(139, 92, 246, 0.1)",
+              color: "var(--accent-violet)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
               <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -182,61 +212,64 @@ function _OriginalWork() {
             </svg>
           </div>
           <div>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-primary)" }}>
               Operational Portals, Admin Systems & Fullstack Services
             </h2>
-            <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
+            <p style={{ fontSize: "0.875rem", color: "var(--text-muted)", margin: 0 }}>
               Enterprise administrative consoles, financial APIs, and specialized inventory modules
             </p>
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem' }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem" }}>
           {additionalPlatforms.map((proj, pIdx) => (
-            <div key={pIdx} className="glass-card" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.75rem' }}>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--text-primary)' }}>
+            <div key={pIdx} className="glass-card" style={{ padding: "1.5rem", display: "flex", flexDirection: "column" }}>
+              <div style={{ marginBottom: "0.75rem" }}>
+                <h3 style={{ fontSize: "1.15rem", fontWeight: 700, color: "var(--text-primary)", marginBottom: "0.35rem" }}>
                   {proj.title}
                 </h3>
-                <a
-                  href={proj.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <div
                   style={{
-                    color: 'var(--accent-cyan)',
-                    display: 'inline-flex',
-                    alignItems: 'center',
+                    fontSize: "0.75rem",
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--accent-emerald)",
+                    fontWeight: 600,
                   }}
-                  title="Open Live Site"
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
+                  {proj.role}
+                </div>
               </div>
 
-              <div style={{
-                fontSize: '0.75rem',
-                fontFamily: 'var(--font-mono)',
-                color: 'var(--accent-emerald)',
-                marginBottom: '0.65rem',
-                fontWeight: 600
-              }}>
-                {proj.role}
-              </div>
-
-              <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)', lineHeight: 1.6, marginBottom: '1rem', flex: 1 }}>
+              <p style={{ fontSize: "0.875rem", color: "var(--text-muted)", lineHeight: 1.6, marginBottom: "1rem", flex: 1 }}>
                 {proj.desc}
               </p>
 
-              <div className="tech-tags-row">
+              <div className="tech-tags-row" style={{ marginBottom: "1rem" }}>
                 {proj.tech.map((t, tIdx) => (
-                  <span key={tIdx} className="tech-tag" style={{ fontSize: '0.7rem', padding: '0.2rem 0.5rem' }}>
+                  <span key={tIdx} className="tech-tag" style={{ fontSize: "0.7rem", padding: "0.2rem 0.5rem" }}>
                     {t}
                   </span>
                 ))}
+              </div>
+
+              <div
+                style={{
+                  borderTop: "1px solid var(--border-subtle)",
+                  paddingTop: "0.75rem",
+                  marginTop: "auto",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.4rem",
+                  fontSize: "0.725rem",
+                  fontFamily: "var(--font-mono)",
+                  color: "var(--text-dim)",
+                }}
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>Internal Infrastructure System • Confidential</span>
               </div>
             </div>
           ))}
