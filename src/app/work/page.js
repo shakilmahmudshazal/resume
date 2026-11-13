@@ -11,56 +11,56 @@ export default function Work() {
   const workApplicationData = [
     {
       type: "Enterprise E-Commerce",
-      title: "eSpares",
+      title: "Enterprise Spare Parts & Appliance E-Commerce",
       role: "Senior Software Engineer • Echologyx",
       metrics: "1M+ Catalog SKUs • Core Web Vitals Optimization",
       description:
-        "The UK's market-leading spare parts and appliance repair platform managing an expansive catalog of over 1M+ SKUs. Contributed to front-end performance tuning, responsive UI redesign, and frictionless checkout flows at Echologyx.",
+        "High-volume UK spare parts and appliance catalog platform managing an expansive inventory of over 1M+ SKUs. Engineered front-end performance tuning, Core Web Vitals optimization, responsive UI modernizations, and frictionless checkout flows.",
       techStack: ["Next.js", "React", "Magento 2", "Tailwind CSS", "REST APIs", "WebDriverIO"],
     },
     {
       type: "High-Concurrency Booking Engine",
-      title: "BDTickets Platform",
+      title: "Nationwide Multi-Modal Transit Ticketing System",
       role: "Core Software Engineer • Bluetech Solutions",
       metrics: "Nationwide Transit Ticketing • Real-Time Concurrency",
       description:
-        "Engineered as a core software engineer across the public passenger booking system, operator administration portal, and executive monitoring console. Architected real-time seat locks, multi-operator inventory synchronization, and redundant payment gateways to handle extreme holiday travel traffic.",
+        "Architected as a core software engineer across the public passenger booking system, operator administration portal, and executive monitoring console. Implemented real-time seat locks, multi-operator inventory synchronization, and resilient payment gateways to handle extreme holiday travel traffic.",
       techStack: ["React.js", "Next.js", "JavaScript (ES6+)", "Ant Design", "Laravel", "MySQL"],
     },
     {
       type: "Automotive E-Commerce",
-      title: "GSF Car Parts",
+      title: "Automotive Parts Distribution & Localized Inventory Engine",
       role: "Senior Software Engineer • Echologyx",
       metrics: "Nationwide UK Distribution • Real-Time Branch Inventory",
       description:
-        "Major UK national automotive parts distributor with hundreds of branch locations. Contributed to vehicle registration number (VRM) lookup integration, real-time localized warehouse stock validation, and click-and-collect reservation workflows engineered at Echologyx.",
+        "Major UK national automotive parts distributor with nationwide branch locations. Contributed to vehicle registration number (VRM) lookup integration, real-time localized warehouse stock validation, and click-and-collect reservation workflows.",
       techStack: ["React", "Next.js", "Magento 2", "REST APIs", "Modern CSS", "CRO"],
     },
     {
       type: "Automotive Aftermarket Distribution",
-      title: "NAPA Auto Parts UK",
+      title: "Pan-European Commercial Aftermarket & Fleet Portal",
       role: "Senior Software Engineer • Echologyx",
       metrics: "Pan-European Catalog Architecture • Distributor UX",
       description:
-        "Premier UK automotive parts, workshop tools, and commercial vehicle equipment platform. Contributed to modern catalog browsing, digital product discovery, responsive UX design, and distributor portal integrations at Echologyx.",
+        "Premier automotive parts, workshop tools, and commercial vehicle equipment platform. Contributed to modern catalog browsing, digital product discovery, responsive UX design, and distributor portal integrations.",
       techStack: ["Next.js", "React", "Magento 2", "Tailwind CSS", "REST APIs"],
     },
     {
       type: "Specialty Commerce & Configurator",
-      title: "Hook and Loop",
+      title: "Industrial Fasteners Configurator & B2B Commerce Platform",
       role: "Senior Software Engineer • Echologyx",
       metrics: "Dynamic Product Configurator • B2B Tiered Volume Pricing",
       description:
-        "Specialized industrial fastening and commercial fastener web store. Engineered dynamic custom strap configurator tools, tiered quantity discounts for B2B accounts, and intuitive product discovery architectures.",
+        "Specialized industrial fastening and commercial hardware web platform. Engineered dynamic custom strap configurator tools, tiered quantity discounts for B2B accounts, and intuitive product discovery architectures.",
       techStack: ["Next.js", "React", "Tailwind CSS", "Magento 2", "TypeScript"],
     },
     {
       type: "B2B / B2C Infrastructure Commerce",
-      title: "Barriers Direct",
+      title: "Perimeter Security & Automated Quoting Platform",
       role: "Senior Software Engineer • Echologyx",
       metrics: "Bespoke Dimension Quoting Engine • Complex Trade Dispatch",
       description:
-        "UK industry leader for commercial security barriers, bollards, and safety infrastructure. Engineered automated bespoke quoting engines, customized dimension calculations, and complex trade dispatch workflows.",
+        "Industry-leading commercial security barriers, bollards, and safety infrastructure platform. Engineered automated bespoke quoting engines, customized dimension calculations, and complex trade dispatch workflows.",
       techStack: ["React", "Next.js", "PHP", "Magento 2", "Custom Modules"],
     },
   ];

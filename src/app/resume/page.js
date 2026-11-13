@@ -10,7 +10,7 @@ export default function Resume() {
       company: "Echologyx Limited, Uttara, Dhaka",
       badge: "Current Role",
       bullets: [
-        "Architecting and delivering enterprise-scale e-commerce web applications for international retail clients across the UK and Europe, including eSpares, GSF Car Parts, NAPA Auto Parts UK, Hook and Loop, and Barriers Direct.",
+        "Architecting and delivering enterprise-scale e-commerce web applications for high-volume international retail, automotive, and industrial clients across the UK and Europe.",
         "Spearheading frontend modernization using Next.js (App Router), React 19, and headless commerce architectures, resulting in measurable improvements to Core Web Vitals (LCP, INP, CLS) and user conversions.",
         "Engineering Conversion Rate Optimization (CRO) experiments and building automated end-to-end testing suites using WebDriverIO.",
         "Leading technical design discussions, establishing code review guidelines, and mentoring mid-level and junior software engineers.",
@@ -23,9 +23,9 @@ export default function Resume() {
       company: "Bluetech Solutions Bangladesh Limited, Gulshan, Dhaka",
       badge: "Full-Time",
       bullets: [
-        "Core engineer for BDTickets, the country's flagship real-time transit reservation platform for bus, launch, and air travel, handling high-concurrency peak traffic.",
-        "Built administrative portals (BDTickets Operator and SR Administrator consoles) using React.js, Next.js, JavaScript ES6, and Ant Design.",
-        "Developed travel agency inventory management systems and 401kDepot financial APIs utilizing Slim, Laravel, PHP, and MySQL.",
+        "Core engineer for the country's flagship real-time multi-modal transit reservation platform for bus, launch, and air travel, handling high-concurrency peak traffic.",
+        "Built administrative portals (Central Operator and Executive Super Administrator consoles) using React.js, Next.js, JavaScript ES6, and Ant Design.",
+        "Developed travel agency inventory management systems and financial validation APIs utilizing Slim, Laravel, PHP, and MySQL.",
         "Integrated dynamic seat-locking mechanisms, secure online payment gateways, and automated SMS verification services.",
       ],
       techStack: ["React.js", "Next.js", "JavaScript (ES6+)", "Ant Design", "Laravel", "Slim", "PHP", "MySQL", "REST APIs", "Git"],
